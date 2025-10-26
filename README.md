@@ -10,7 +10,8 @@ The system collects environmental data from the sensor node and uploads it to th
 - BME280 Barometric Pressure Sensor	
 -	Power Supply 5V	
 -	Connecting Wires	
-- Breadboard	
+- Breadboard
+  
 ## IoT Sensor Node & WiFi Gateway
 
 This project demonstrates an IoT system consisting of sensor nodes and a WiFi gateway:
@@ -20,6 +21,7 @@ This project demonstrates an IoT system consisting of sensor nodes and a WiFi ga
 
 - **WiFi Gateway Circuit:**  
   The gateway receives data from one or multiple sensor nodes via the NRF24L01 transceiver module. After receiving the data, it uploads it to a server using a WiFi connection. The ESP32 combined with the NRF24L01 module is ideal for building this gateway.
+  
 
 ## Setting Up ThingSpeak Server
 
