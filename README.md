@@ -14,3 +14,7 @@ The system collects environmental data from the sensor node and uploads it to th
 ## Sensor Node Circuit
 
 This project demonstrates a sensor node using an STM32F103C Bluepill microcontroller with an NRF24L01 module. Any sensor can be interfaced, but for this demo, a BME280 Barometric Pressure Sensor is used.
+
+## WiFi Gateway Circuit
+
+The gateway receives data from one or multiple sensor nodes via the NRF24L01 transceiver module. Once the data is received, it is uploaded to a server using a WiFi connection. The ESP32 combined with the NRF24L01 module is an ideal choice for building this WiFi gateway.
