@@ -11,13 +11,15 @@ The system collects environmental data from the sensor node and uploads it to th
 -	Power Supply 5V	
 -	Connecting Wires	
 - Breadboard	
-## Sensor Node Circuit
+## IoT Sensor Node & WiFi Gateway
 
-This project demonstrates a sensor node using an STM32F103C Bluepill microcontroller with an NRF24L01 module. Any sensor can be interfaced, but for this demo, a BME280 Barometric Pressure Sensor is used.
+This project demonstrates an IoT system consisting of sensor nodes and a WiFi gateway:
 
-## WiFi Gateway Circuit
+- **Sensor Node Circuit:**  
+  A sensor node uses an STM32F103C Bluepill microcontroller with an NRF24L01 module. Any sensor can be connected, but this demo uses a BME280 Barometric Pressure Sensor.
 
-The gateway receives data from one or multiple sensor nodes via the NRF24L01 transceiver module. Once the data is received, it is uploaded to a server using a WiFi connection. The ESP32 combined with the NRF24L01 module is an ideal choice for building this WiFi gateway.
+- **WiFi Gateway Circuit:**  
+  The gateway receives data from one or multiple sensor nodes via the NRF24L01 transceiver module. After receiving the data, it uploads it to a server using a WiFi connection. The ESP32 combined with the NRF24L01 module is ideal for building this gateway.
 
 ## Setting Up ThingSpeak Server
 
