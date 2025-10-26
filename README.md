@@ -11,3 +11,6 @@ The system collects environmental data from the sensor node and uploads it to th
 -	Power Supply 5V	
 -	Connecting Wires	
 - Breadboard	
+## Sensor Node Circuit
+
+This project demonstrates a sensor node using an STM32F103C Bluepill microcontroller with an NRF24L01 module. Any sensor can be interfaced, but for this demo, a BME280 Barometric Pressure Sensor is used.
