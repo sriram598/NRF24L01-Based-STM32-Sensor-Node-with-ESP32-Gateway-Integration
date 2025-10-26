@@ -18,3 +18,14 @@ This project demonstrates a sensor node using an STM32F103C Bluepill microcontro
 ## WiFi Gateway Circuit
 
 The gateway receives data from one or multiple sensor nodes via the NRF24L01 transceiver module. Once the data is received, it is uploaded to a server using a WiFi connection. The ESP32 combined with the NRF24L01 module is an ideal choice for building this WiFi gateway.
+
+## Setting Up ThingSpeak Server
+
+ThingSpeak is an IoT analytics platform that allows you to aggregate, visualize, and analyze live data streams in the cloud. You can send data from your devices, create real-time visualizations, and set up alerts.
+
+### Steps to Set Up:
+
+1. **Create an account** on [ThingSpeak](https://thingspeak.com).
+2. **Create a new channel** to receive and display your data in graphical format.
+3. **Fill in the channel parameters** as required (refer to the image below if needed).
+4. Click **Save Channel** to finalize the setup.
