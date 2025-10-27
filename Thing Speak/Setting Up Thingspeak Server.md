@@ -5,7 +5,7 @@ You can send data to ThingSpeak from your IoT devices, create real-time visualiz
 
 ---
 
-### 🔧 Steps to Set Up ThingSpeak Dashboard
+### Steps to Set Up ThingSpeak Dashboard
 
 1. **Create a ThingSpeak Account**
    - Go to [https://thingspeak.com](https://thingspeak.com)
@@ -31,39 +31,3 @@ You can send data to ThingSpeak from your IoT devices, create real-time visualiz
    - You can customize chart types, colors, and time windows.
 
 ---
-
-### 🧠 Example Code Snippet (ESP32 → ThingSpeak)
-
-```cpp
-#include <WiFi.h>
-#include <HTTPClient.h>
-
-const char* ssid = "Your_WiFi_Name";
-const char* password = "Your_WiFi_Password";
-String apiKey = "YOUR_WRITE_API_KEY";
-const char* server = "http://api.thingspeak.com/update";
-
-void setup() {
-  Serial.begin(115200);
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("\\nWiFi Connected");
-}
-
-void loop() {
-  if (WiFi.status() == WL_CONNECTED) {
-    HTTPClient http;
-    String url = String(server) + "?api_key=" + apiKey +
-                 "&field1=" + String(pH) +
-                 "&field2=" + String(turbidity) +
-                 "&field3=" + String(tds) +
-                 "&field4=" + String(temp);
-    http.begin(url);
-    int httpCode = http.GET();
-    http.end();
-  }
-  delay(15000); // ThingSpeak allows 1 update every 15 seconds
-}
