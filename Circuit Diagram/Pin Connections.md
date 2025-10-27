@@ -28,12 +28,8 @@
 | MISO         | D19                      | SPI Master In Slave Out |
 | MOSI         | D23                      | SPI Master Out Slave In |
 
-> ⚠️ **Note:**  
-> - NRF24L01 requires **3.3V power and logic**.  
-> - Add a **10 µF capacitor** between VCC and GND for stable operation.  
-> - Double-check SPI pin mapping if using custom ESP32 boards — some boards label pins differently.
+-----
 
----
 
 ### Example Git Commit
 
