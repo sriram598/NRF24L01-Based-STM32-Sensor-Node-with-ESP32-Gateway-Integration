@@ -27,9 +27,3 @@ This project demonstrates an IoT system consisting of sensor nodes and a WiFi ga
 
 ThingSpeak is an IoT analytics platform that allows you to aggregate, visualize, and analyze live data streams in the cloud. You can send data from your devices, create real-time visualizations, and set up alerts.
 
-### Steps to Set Up:
-
-1. **Create an account** on [ThingSpeak](https://thingspeak.com).
-2. **Create a new channel** to receive and display your data in graphical format.
-3. **Fill in the channel parameters** as required (refer to the image below if needed).
-4. Click **Save Channel** to finalize the setup.
