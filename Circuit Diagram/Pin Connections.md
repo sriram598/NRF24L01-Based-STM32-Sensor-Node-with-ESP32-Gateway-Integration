@@ -1,8 +1,10 @@
-### NRF24L01 Pin Connections with STM32F103C (Blue Pill)
+## NRF24L01 Pin Connections
+
+### With STM32F103C (Blue Pill)
 
 | NRF24L01 Pin | Connected To (STM32F103C Pin) | Description |
 |--------------|-------------------------------|--------------|
-| VCC          | 3.3V                          | Power Supply (Do NOT use 5V) |
+| VCC          | 3.3V                          | Power Supply (Do **NOT** use 5V) |
 | GND          | GND                           | Ground |
 | CE           | PB0                           | Chip Enable (controls TX/RX mode) |
 | CSN          | PA4                           | Chip Select (SPI slave select) |
@@ -10,10 +12,11 @@
 | MISO         | PA6                           | SPI Master In Slave Out |
 | MOSI         | PA7                           | SPI Master Out Slave In |
 
->  **Note:** The NRF24L01 operates at **3.3V logic only** — ensure all connections use 3.3V.  
+> ⚠️ **Note:** The NRF24L01 operates at **3.3V logic only** — ensure all connections use 3.3V.
 
+---
 
-### NRF24L01 Pin Connections with ESP32
+### With ESP32
 
 | NRF24L01 Pin | Connected To (ESP32 Pin) | Description |
 |--------------|--------------------------|--------------|
@@ -25,6 +28,16 @@
 | MISO         | D19                      | SPI Master In Slave Out |
 | MOSI         | D23                      | SPI Master Out Slave In |
 
->  **Note:**  
+> ⚠️ **Note:**  
 > - NRF24L01 requires **3.3V power and logic**.  
+> - Add a **10 µF capacitor** between VCC and GND for stable operation.  
 > - Double-check SPI pin mapping if using custom ESP32 boards — some boards label pins differently.
+
+---
+
+### Example Git Commit
+
+```bash
+git add README.md
+git commit -m "docs(hardware): add NRF24L01 pin connection tables for STM32 and ESP32"
+git push origin main
