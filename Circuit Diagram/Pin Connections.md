@@ -29,11 +29,3 @@
 | MOSI         | D23                      | SPI Master Out Slave In |
 
 -----
-
-
-### Example Git Commit
-
-```bash
-git add README.md
-git commit -m "docs(hardware): add NRF24L01 pin connection tables for STM32 and ESP32"
-git push origin main
